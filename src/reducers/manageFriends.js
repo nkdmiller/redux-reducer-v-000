@@ -6,6 +6,10 @@ export function manageFriends(state, action){
         hometown: action.friend.hometown,
         id: action.friend.id
       }]}
+    case 'REMOVE_FRIEND':
+      return {friends: state.friends.filter(friend =>
+      
+      )
     default:
       return state;
   }  
